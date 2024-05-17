@@ -16,7 +16,7 @@ try {
     console.log('Modelo obtido com sucesso');
 } catch (error) {
     console.error('Erro ao obter o modelo:', error);
-    throw error; // Opcional: relançar o erro para que a falha seja propagada
+    throw error
 }
 
 // Exporta o modelo
