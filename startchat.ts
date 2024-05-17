@@ -1,4 +1,4 @@
-import model from "./geminiConfig/gemini";
+import model from "./backend/src/geminiConfig/gemini";
 
 
 async function run() {

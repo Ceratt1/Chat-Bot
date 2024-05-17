@@ -1,8 +1,8 @@
-import app from './app'
-import dotenv from 'dotenv'
+import app from './app';
+import dotenv from 'dotenv';
 dotenv.config();
 
-const port : string | undefined = process.env.PORT
+const port : string | undefined = process.env.PORT;
 
 if (!port) {
     throw new Error("a port não está definida");
