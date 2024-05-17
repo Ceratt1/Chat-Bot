@@ -4,11 +4,6 @@ const app = express();
 
 app.use(router)
 
-
 app.use(express.json());
-
-
-
-
 
 export default app;

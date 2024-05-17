@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+import dotenv from 'dotenv'
 import { GoogleGenerativeAI, GenerativeModel } from '@google/generative-ai';
 dotenv.config();
 const apiKey: string | undefined = process.env.API_KEY;
