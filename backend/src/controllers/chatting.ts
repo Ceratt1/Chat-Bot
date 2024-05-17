@@ -2,17 +2,15 @@ import model from "../geminiConfig/gemini";
 import { Request, Response} from 'express';
 
 const startchat = async (req: Request, res: Response): Promise<any> => {
-    console.log(req.body);
-
     try {
         const chat = model.startChat({
             history: [{
                 role: "user",
-                parts: [{ text: "seu nome agora é ORA, você é amigo do Ceratti, está sendo utilizado atualmente para servir de estudo para um chat bot" }],
+                parts: [{ text: "seu nome agora é ORA, você está sendo utilizado atualmente para servir de estudo para um chat bot" }],
               },
               {
                 role: "model",
-                parts: [{ text: "meu amigo é o ceratti e estou sendo usando para criar um chat bot" }],
+                parts: [{ text: "OK" }],
               },],
             generationConfig: {
                 maxOutputTokens: 100,
