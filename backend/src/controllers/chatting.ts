@@ -1,12 +1,10 @@
 import model from "../geminiConfig/gemini";
 import { Request, Response} from 'express';
+import ChatHistory from '../ChatHistory/history'
+import { text } from "stream/consumers";
 
-const chat = model.startChat({
-    history: [],
-    generationConfig: {
-        maxOutputTokens: 100,
-    },
-});
+
+const chat = model.startChat(ChatHistory);
 
 
 
@@ -17,9 +15,7 @@ const startchat = async (req: Request, res: Response): Promise<any> => {
     try {
 
         const messageuser = req.body.messageuser;
-
         const result = await chat.sendMessage(messageuser);
-        console.table(result)
         const response = result.response;
         const text = response.text();
     
