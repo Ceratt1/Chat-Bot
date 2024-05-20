@@ -1,6 +1,5 @@
 import model from "../geminiConfig/gemini";
 import { Request, Response} from 'express';
-// import {ChatHistory, addTextToParts} from '../ChatHistory/history'
 
 import {historyChat, addTextToParts} from "../ChatHistory/history";
 import { text } from "stream/consumers";

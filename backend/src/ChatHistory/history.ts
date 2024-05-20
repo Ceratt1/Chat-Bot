@@ -1,6 +1,4 @@
 import { clear, table } from "console";
-console.clear()
-
 interface Part {
   text: string;
 }
