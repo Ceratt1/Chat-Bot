@@ -21,3 +21,4 @@ try {
 
 // Exporta o modelo
 export default model;
+
