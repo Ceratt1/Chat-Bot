@@ -1,4 +1,3 @@
-import { clear, table } from "console";
 interface Part {
   text: string;
 }
